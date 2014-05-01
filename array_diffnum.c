@@ -1,18 +1,41 @@
 #include <stdio.h>
 
 int count(int array[],int size){
-	int i,j,count,result=0;
+	/*int i,j,count,result=0;
 
 	for(i=0;i<size;i++){
 		count=0;
 		for(j=0;j<i;j++){
 			if(array[j]!=array[i])
 				count++;
-			if(count==(i-1))
-				result++;	
+			if(count==i){
+				printf("%d \n",array[i]);//to print out diff num
+				result++;
+			}	
 		}	
+	}*/
+	int i,j,count=1;
+	
+	printf("%d \n",array[0]);
+
+	for(i=1;i<size;i++){
+		for(j=0;j<i;j++){
+			if(array[j]==array[i])
+				break;
+			
+		}
+		if(j==i){
+			printf("%d \n",array[i]); // to confirm the number
+			count++;
+		}else{
+
+			printf("same: %d \n",array[i]); // very good way to debug!!
+		}
+
 	}
-	return result;
+
+		
+	return count;
 }
 
 

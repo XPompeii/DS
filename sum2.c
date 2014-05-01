@@ -24,20 +24,20 @@ int printsumrec(int ma){
 void printsumloop(int ma){
 	
 	int i,sum=0;
-	char printnum[200]="",temp[5];
+	char printnum[200]="1",temp[5];
 	
 	for(i=1;i<=ma;i++){
 		sum += i;
 
-		if(i==1){
+		/*if(i==1){
 			sprintf(printnum,"%d",i);
 			printf("%s = %d \n",printnum,sum);
 		}
-		else{
+		else{*/
 			sprintf(temp,"+ %d",i);
 			strcat(printnum,temp);
 			printf("%s = %d \n",printnum,sum);
-		}	 
+	//	}	 
 	}
 
 

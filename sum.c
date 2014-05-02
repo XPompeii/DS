@@ -7,7 +7,7 @@ int sumloop(int n){
 	}
 	return sum;
 }
-
+ // for testing
 int sumrec(int n){
 	if(n==1) 
 		return 1;

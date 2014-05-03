@@ -7,13 +7,24 @@ int isStackEmpty(int *stack,int top){
 
 }
 
-Int isStackFull(int *stack,int n,int top){
+int isStackFull(int *stack,int n,int top){
     if(top==n-1) return 1;
     else return 0;
 
 }
 
+void printStack(int *stack,int top){
+    int i;
+    if(isStackEmpty(stack,top)){
+        printf("Stack is empty");
+    }else{
+        for(i=0;i<=top;i++){
+            printf("%5d",stack[i]);
+        }
+        printf("\n");
+    }
 
+}
 
 int main(void){
 	

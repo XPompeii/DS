@@ -26,6 +26,17 @@ void printStack(int *stack,int top){
 
 }
 
+int push(int *stack,int n,int *top,int data){
+    if(isStackFull(stack,n,top)){
+        printf("Stack is full\n");
+    }else
+        top++;
+        stack[top]=data;
+    }
+    return 1;
+}
+
+
 int main(void){
 	
 	int stack[STACK_SIZE];

@@ -7,6 +7,14 @@ int isStackEmpty(int *stack,int top){
 
 }
 
+Int isStackFull(int *stack,int n,int top){
+    if(top==n-1) return 1;
+    else return 0;
+
+}
+
+
+
 int main(void){
 	
 	int stack[STACK_SIZE];
